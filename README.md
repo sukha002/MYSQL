@@ -45,9 +45,13 @@ Insert into instrument values ( 6, 200, 5);
 ```
 Select * from music;
 ```
+![image](https://user-images.githubusercontent.com/31208964/213952661-c6a2770d-7028-4574-b06c-a5910ab1afe1.png)
+
+
 ```
 Select * from instrument;
 ```
+![image](https://user-images.githubusercontent.com/31208964/213952704-59a5706b-5de0-48cb-b126-7df1e67c947b.png)
 
 
 ### -- INNER JOIN
@@ -58,6 +62,9 @@ FROM music
 INNER join instrument
 on music.student_id = instrument.student_id;
 ```
+![image](https://user-images.githubusercontent.com/31208964/213952826-cb245e2a-d015-4ba0-aa32-b63835aaaf58.png)
+
+
 ### -- left join 
 ```
 Select * 
@@ -65,6 +72,10 @@ FROM music
 left join instrument
 ON music.student_id = instrument.student_id;
 ```
+![image](https://user-images.githubusercontent.com/31208964/213952865-f069d53c-1d4e-43a7-9087-4c50c605d31d.png)
+
+
+
 ### -- right join 
 ``` 
 Select * 
@@ -72,7 +83,9 @@ FROM music
 right join instrument
 ON music.student_id = instrument.student_id;
 ```    
-    
+![image](https://user-images.githubusercontent.com/31208964/213952954-60f87068-dd1b-4af5-873c-c5e89293db70.png)
+
+
 ### -- Full join 
 ```
 Select * 
@@ -80,11 +93,12 @@ FROM music
 left join instrument
 ON music.student_id = instrument.student_id;
 
-UNION
+### --UNION
  
 Select * 
 FROM music 
 right join instrument
 ON music.student_id = instrument.student_id;
 ```
+![image](https://user-images.githubusercontent.com/31208964/213953045-929e9409-0ff8-4f81-8c5d-8edcaf619ca2.png)
        
